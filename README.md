@@ -36,4 +36,8 @@ sudo salt-call state.highstate
 sudo salt '*' test.ping  
 sudo vim graphite.sls // add carbon cache so this service will be running after reboot  
 sudo salt '*' state.highstate  
+  
+  
+curl -o bootstrap-salt.sh -L https://bootstrap.saltstack.com  
+sudo sh bootstrap-salt.sh stable  
 
